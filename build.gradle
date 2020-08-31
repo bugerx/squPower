@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.xtyuns.mirai.plugin'
-version = '0.1.0'
+version = '0.1.1'
 
 repositories {
     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
@@ -18,6 +18,9 @@ def miraiCoreVersion = "1.1.3" // 1.2.2
 def miraiConsoleVersion = "0.5.2" // 1.0-M3-1
 
 dependencies {
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    //compile 'com.alibaba:fastjson:1.2.73'
+
     compileOnly 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     compileOnly "net.mamoe:mirai-core:$miraiCoreVersion"
     compileOnly "net.mamoe:mirai-console:$miraiConsoleVersion"
