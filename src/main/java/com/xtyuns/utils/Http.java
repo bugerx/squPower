@@ -3,6 +3,7 @@ package com.xtyuns.utils;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 public class Http {
     public static String httpGet(String url) throws IOException {
@@ -18,7 +19,7 @@ public class Http {
         uc.connect();
 
         is = uc.getInputStream();
-        br = new BufferedReader(new InputStreamReader(is));
+        br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
         String tmp;
         StringBuilder sbd = new StringBuilder();
         while ((tmp = br.readLine()) != null) {
@@ -53,7 +54,7 @@ public class Http {
 
 
         is = uc.getInputStream();
-        br = new BufferedReader(new InputStreamReader(is));
+        br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
         String tmp;
         StringBuilder sbd = new StringBuilder();
         while ((tmp = br.readLine()) != null) {

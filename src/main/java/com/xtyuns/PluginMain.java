@@ -2,8 +2,6 @@ package com.xtyuns;
 
 import com.xtyuns.wanxiao.Room;
 import net.mamoe.mirai.console.plugins.PluginBase;
-import net.mamoe.mirai.contact.Friend;
-import net.mamoe.mirai.contact.Member;
 import net.mamoe.mirai.message.GroupMessageEvent;
 import net.mamoe.mirai.message.data.*;
 
@@ -31,16 +29,16 @@ class PluginMain extends PluginBase {
 
             if (matcher.find()) {
                 int build = Integer.parseInt(matcher.group(1));
-                int levelId = Integer.parseInt(matcher.group(2));
+                int level = Integer.parseInt(matcher.group(2));
                 String r = matcher.group(3);
 
                 Room room;
                 String msg;
                 try {
-                    room = new Room(build, levelId, r);
+                    room = new Room(build, level, r);
                     msg = room.getName() + "宿舍"
                             + "\r\n"
-                            + "剩余电量: " + room.getQuantity();
+                            + "剩余电量: " + room.getQuantity() + "度";
                 } catch (Exception e) {
                     e.printStackTrace();
 
