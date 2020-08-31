@@ -86,7 +86,7 @@ public class Room {
         JsonArray rooms = info.get("roomlist").getAsJsonArray();
         for (Object o : rooms) {
             JsonObject room = (JsonObject) o;
-            if ((this.level + "层").equals(room.get("name").getAsString()) || (this.level - 1 + "、" + this.level + "层").equals(room.get("name").getAsString()) || (this.level + "、" + (this.level + 1) + "层").equals(room.get("name").getAsString())) {
+            if ((this.level + "").equals(room.get("name").getAsString()) || (this.level + "层").equals(room.get("name").getAsString()) || (this.level - 1 + "、" + this.level + "层").equals(room.get("name").getAsString()) || (this.level + "、" + (this.level + 1) + "层").equals(room.get("name").getAsString())) {
                 this.levelId = room.get("id").getAsInt();
                 return;
             }

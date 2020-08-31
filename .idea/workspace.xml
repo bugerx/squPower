@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7bf2f7-1b4d-4c6e-8007-b561b319db8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xtyuns/PluginMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xtyuns/PluginMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xtyuns/utils/Http.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xtyuns/utils/Http.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xtyuns/wanxiao/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xtyuns/wanxiao/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +183,7 @@
       <workItem from="1598829116584" duration="58000" />
       <workItem from="1598829185193" duration="17904000" />
       <workItem from="1598848559661" duration="4947000" />
-      <workItem from="1598859838098" duration="1691000" />
+      <workItem from="1598859838098" duration="2488000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <created>1598793982950</created>
@@ -233,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598854227514</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="bug-n">
+      <created>1598861746066</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598861746066</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +259,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="初步完善功能" />
     <MESSAGE value="先记录一下bug, 有空再修" />
-    <option name="LAST_COMMIT_MESSAGE" value="先记录一下bug, 有空再修" />
+    <MESSAGE value="bug-n" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug-n" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598852440330">
@@ -273,10 +275,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="320" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1598829971368" />
-    <state x="524" y="0" key="CommitChangelistDialog2" timestamp="1598854226795">
+    <state x="524" y="0" key="CommitChangelistDialog2" timestamp="1598861744786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598854226795" />
+    <state x="524" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598861744786" />
     <state x="618" y="324" key="Github.Dialog.Accounts.Choose" timestamp="1598768613179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -289,22 +291,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="519" y="107" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598829366809" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1598861525336">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1598862189320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598861525336" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1598861525336">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598862189320" />
+    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1598862189320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598861525336" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1598861525336">
+    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598862189320" />
+    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1598862189320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598861525336" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1598861525336">
+    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598862189320" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1598862189320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598861525336" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598862189320" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1598848094222">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -329,10 +331,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1598767118435" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1598854229083">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1598861748297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598854229083" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598861748297" />
     <state x="468" y="146" width="600" height="532" key="find.popup" timestamp="1598841744222">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
