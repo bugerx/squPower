@@ -1,4 +1,4 @@
-package com.xtyuns.utils;
+package com.xtyuns.mirai.utils;
 
 import java.io.*;
 import java.net.HttpURLConnection;

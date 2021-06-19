@@ -1,10 +1,11 @@
-package com.xtyuns.wanxiao;
+package com.xtyuns.mirai.wanxiao;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import static com.xtyuns.utils.Http.httpGet;
+import static com.xtyuns.mirai.utils.Http.httpGet;
+
 
 public class Room {
     private int build; //(建筑名称)

@@ -1,9 +1,11 @@
-package com.xtyuns;
+package com.xtyuns.mirai;
 
-import com.xtyuns.wanxiao.Room;
-import net.mamoe.mirai.console.plugins.PluginBase;
-import net.mamoe.mirai.message.GroupMessageEvent;
-import net.mamoe.mirai.message.data.*;
+import com.xtyuns.mirai.wanxiao.Room;
+import net.mamoe.mirai.console.plugin.jvm.JavaPlugin;
+import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescriptionBuilder;
+import net.mamoe.mirai.event.GlobalEventChannel;
+import net.mamoe.mirai.event.events.GroupMessageEvent;
+import net.mamoe.mirai.message.data.At;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -11,16 +13,25 @@ import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-class PluginMain extends PluginBase {
+public final class Power extends JavaPlugin {
+    public static final Power INSTANCE = new Power();
 
-    public void onLoad() {
-        getLogger().info("squPower Plugin loaded!");
+    private Power() {
+        super(new JvmPluginDescriptionBuilder("com.xtyuns.mirai.power", "1.0-SNAPSHOT")
+                .name("查电费")
+                .info("电费查询插件")
+                .author("XT.Li")
+                .build());
     }
 
+    @Override
     public void onEnable() {
-        getLogger().info("squPower Plugin enabled!");
+        getLogger().verbose("squPower Plugin enabled!");
 
-        this.getEventListener().subscribeAlways(GroupMessageEvent.class, (GroupMessageEvent event) -> {
+
+        GlobalEventChannel.INSTANCE.subscribeAlways(GroupMessageEvent.class, event -> {
+            getLogger().info("debug: " + event.getMessage().contentToString());
+
             String content = event.getMessage().contentToString();
 
             String regx = "^查电费\\s*(\\d+)[#＃井](\\d+)(\\d\\d)";
@@ -53,24 +64,11 @@ class PluginMain extends PluginBase {
                 }
 
                 event.getGroup().sendMessage(
-                        new At(event.getSender())
+                        new At(event.getSender().getId())
                                 .plus(msg)
                 );
-
-                /*event.getGroup().sendMessage(
-                        new At(event.getSender())
-                                .plus("\r\n")
-                                .plus("由于原框架项目已停止维护, 因此本功能正在进行项目迁移。")
-                                .plus("\r\n\r\n")
-                                .plus("项目迁移期间所有功能均暂时无法正常使用, 请等待项目迁移完成!")
-                                .plus("\r\n\r\n")
-                                .plus("项目地址: https://github.com/bugerx/squPower")
-                                .plus("\r\n")
-                                .plus("欢迎大家贡献代码~")
-                );*/
             }
 
         });
     }
-
-}          
+}

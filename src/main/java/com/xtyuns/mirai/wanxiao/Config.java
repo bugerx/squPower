@@ -1,4 +1,4 @@
-package com.xtyuns.wanxiao;
+package com.xtyuns.mirai.wanxiao;
 
 public class Config {
     public static final String HOST = "http://h5cloud.17wanxiao.com:8080";
